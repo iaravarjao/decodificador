@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Decodificador Alura - Oracle One</title>
+  </head>
+  <body>
+    <header><h1>Decodificador Alura - Oracle One</h1></header>
+    <main>
+      <div>
+        <input type="text" id="entrada" placeholder="Digite uma mensagem:" />
+      </div>
+      <br />
+      <div>
+        <p>Requisitos:</p>
+        <ul>
+          <li>Digite apenas com letras minúsculas;</li>
+          <li>
+            Não devem ser utilizados letras com acentos nem caracteres
+            especiais;
+          </li>
+        </ul>
+      </div>
+      <button type="button" onclick="criptografar()">Criptografar</button>
+      <button type="button" onclick="descriptografar()">Descriptografar</button>
+      
+      <div class="nenhuma">
+        <img src="img/nenhuma.png" id="nenhuma" alt="Sem mensagem">
+      </div>
+
+      <div>
+        <p class="resultado" id="resultado"></p>
+      </div>
+      <div>
+
+      <button type="button" onclick="copiar()">Copiar</button>
+
+      <script defer src="script.js"></script>
+    </main>
+    <footer>
+      <a target="_blank" href="https://github.com/iaravarjao">
+        <img src="img/github.svg" class="logot" alt="github" />
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/iaravarjao">
+        <img src="img/linkedin.svg" class="logot" alt="linkedin" />
+      </a>
+      <p>
+        Challenge Alura - Programa Oracle One<br />
+        &copy; Abril/2023 - Iara Varjão Barbosa
+      </p>
+    </footer>
+  </body>
+</html>

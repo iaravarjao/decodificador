@@ -1,0 +1,27 @@
+body,
+p,
+h1 {
+  padding: 0px;
+  height: auto;
+  align-items: center;
+  background-color: lightgray;
+}
+
+h1,
+footer {
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  height: 150px;
+}
+
+.nenhuma {
+  align-content: center;
+}
+
+.logot {
+  height: 30px;
+  margin: 15px 5px 20px 5px;
+}
