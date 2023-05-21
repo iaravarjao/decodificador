@@ -1,24 +1,37 @@
-body,
-p,
-h1 {
+* {
   padding: 0px;
   height: auto;
   align-items: center;
-  background-color: lightgray;
+  text-align: center;
+  background-color: rgb(245, 212, 221);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,
-footer {
+textarea {
+  width: 40%;
+  height: 80px;
+  padding: 20px;
+  align-items: center;
+  background-color: white;
+  font-size: large;
   text-align: center;
 }
 
-input {
-  width: 50%;
-  height: 150px;
+.requisitos {
+  font-style: italic;
 }
 
-.nenhuma {
-  align-content: center;
+button {
+  width: 200px;
+  font-size: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: rgb(245, 166, 178);
+  cursor: pointer;
 }
 
 .logot {
