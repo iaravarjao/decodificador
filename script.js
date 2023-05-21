@@ -59,5 +59,5 @@ function copiar() {
       alert('Erro ao copiar', err);
     }
   );
-    resultado.value = '';
+  resultado.value = '';
 }
