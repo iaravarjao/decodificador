@@ -32,9 +32,9 @@ function criptografar(msgCriptografada) {
 }
 function descriptografar(msgDescriptografada) {
   let substituto = [
-    ['a', 'ai'],
     ['e', 'enter'],
     ['i', 'imes'],
+    ['a', 'ai'],
     ['o', 'ober'],
     ['u', 'ufat'],
   ];
