@@ -13,9 +13,9 @@ function botaoDescriptografar() {
 }
 function criptografar(msgCriptografada) {
   let substituto = [
-    ['a', 'ai'],
     ['e', 'enter'],
     ['i', 'imes'],
+    ['a', 'ai'],
     ['o', 'ober'],
     ['u', 'ufat'],
   ];
