@@ -1,20 +1,54 @@
-function criptografar() {
-  let entrada = document.getElementById('entrada').value;
-  var convertido = '';
-  convertido = entrada.replace(/e/g, 'enter');
+const textArea = document.getElementById('mensagem');
+const resultado = document.getElementById('resultado');
 
-  document.getElementById('resultado').innerHTML = convertido;
-  document.getElementById('nenhuma').style.display = 'none';
+function botaoCriptografar() {
+  const stringCriptografada = criptografar(textArea.value);
+  resultado.value = stringCriptografada;
+  textArea.value = '';
 }
-
-function descriptografar() {
-  var entrada = document.getElementById('entrada').value;
-  var convertido = '';
-  var convertido = entrada.replaceAll(/enter/g, 'e');
-
-  document.getElementById('resultado').innerHTML = convertido;
+function botaoDescriptografar() {
+  const stringDescriptografada = descriptografar(textArea.value);
+  resultado.value = stringDescriptografada;
+  textArea.value = '';
 }
+function criptografar(msgCriptografada) {
+  let substituto = [
+    ['a', 'ai'],
+    ['e', 'enter'],
+    ['i', 'imes'],
+    ['o', 'ober'],
+    ['u', 'ufat'],
+  ];
 
+  for (let i = 0; i < substituto.length; i++) {
+    if (msgCriptografada.includes(substituto[i][0])) {
+      msgCriptografada = msgCriptografada.replaceAll(
+        substituto[i][0],
+        substituto[i][1]
+      );
+    }
+  }
+  return msgCriptografada;
+}
+function descriptografar(msgDescriptografada) {
+  let substituto = [
+    ['a', 'ai'],
+    ['e', 'enter'],
+    ['i', 'imes'],
+    ['o', 'ober'],
+    ['u', 'ufat'],
+  ];
+
+  for (let i = 0; i < substituto.length; i++) {
+    if (msgDescriptografada.includes(substituto[i][1])) {
+      msgDescriptografada = msgDescriptografada.replaceAll(
+        substituto[i][1],
+        substituto[i][0]
+      );
+    }
+  }
+  return msgDescriptografada;
+}
 function copiar() {
   let convertido = document.getElementById('resultado').value;
   navigator.clipboard.writeText(convertido).then(
@@ -26,10 +60,3 @@ function copiar() {
     }
   );
 }
-
-//As "chaves" de criptografia que utilizaremos são:
-//A letra "e" é convertida para "enter"
-//A letra "i" é convertida para "imes"
-//A letra "a" é convertida para "ai"
-//A letra "o" é convertida para "ober"
-//A letra "u" é convertida para "ufat"
