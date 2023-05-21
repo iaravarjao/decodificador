@@ -11,10 +11,9 @@
     <header><h1>Decodificador Alura - Oracle One</h1></header>
     <main>
       <div>
-        <input type="text" id="entrada" placeholder="Digite uma mensagem:" />
+        <textarea id="mensagem" placeholder="Digite uma mensagem:"></textarea>
       </div>
-      <br />
-      <div>
+      <div class="requisitos">
         <p>Requisitos:</p>
         <ul>
           <li>Digite apenas com letras minúsculas;</li>
@@ -24,17 +23,15 @@
           </li>
         </ul>
       </div>
-      <button type="button" onclick="criptografar()">Criptografar</button>
-      <button type="button" onclick="descriptografar()">Descriptografar</button>
-      
-      <div class="nenhuma">
-        <img src="img/nenhuma.png" id="nenhuma" alt="Sem mensagem">
-      </div>
+
+      <button type="button" onclick="botaoCriptografar()">Criptografar</button>
+      <button type="button" onclick="botaoDescriptografar()">
+        Descriptografar
+      </button>
 
       <div>
-        <p class="resultado" id="resultado"></p>
+        <textarea id="resultado" placeholder="Resultado"></textarea>
       </div>
-      <div>
 
       <button type="button" onclick="copiar()">Copiar</button>
 
@@ -49,7 +46,7 @@
       </a>
       <p>
         Challenge Alura - Programa Oracle One<br />
-        &copy; Abril/2023 - Iara Varjão Barbosa
+        &copy; Maio/2023 - Iara Varjão Barbosa
       </p>
     </footer>
   </body>
